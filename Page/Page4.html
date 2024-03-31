@@ -27,10 +27,7 @@
             color: #ffffff;
             margin-bottom: 20px;
         }
-          h3 {
-            color: #ffffff;
-            margin-bottom: 10px;
-        }
+          
 
         iframe {
             margin-top: 20px;
@@ -70,7 +67,7 @@
 
         function typeWriter() {
             if (i < text.length) {
-                document.getElementById("typed-text").getElementsByTagName("h3")[0].innerHTML += text.charAt(i);
+                document.getElementById("typed-text").getElementsByTagName("h1")[0].innerHTML += text.charAt(i);
                 i++;
                 setTimeout(typeWriter, speed);
             }
