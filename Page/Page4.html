@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            background-image: url('https://i.pinimg.com/originals/e7/2c/d1/e72cd1b3049474f7a2f496505a6773d2.gif');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            background-color: rgba(128, 128, 128, 0.5); /* Warna latar belakang abu-abu dengan transparansi */
+        }
+
+        h1 {
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+
+        iframe {
+            margin-top: 20px;
+            width: 600px; /* Ubah ukuran kotak menjadi 600x600 */
+            height: 600px;
+            border: none;
+        }
+
+        button {
+            padding: 15px 40px;
+            margin-top: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+            position: relative;
+            background: url('https://raw.githubusercontent.com/Randyh-25/UntukPacar/main/Gambar/R.png') no-repeat center center;
+            background-size: cover;
+            color: #ffffff;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <audio controls autoplay loop>
+    <source src="https://raw.githubusercontent.com/Randyh-25/UntukPacar/main/Backsound/Nanti%20Kita%20Seperti%20Ini.mp3" type="audio/mp3">
+  </audio>
+    
+    <div id="typed-text">
+        <h1></h1>
+    </div>
+
+    <script>
+        var text = "Halo ayang, ini aku pacarmu tercinta. Ayang sekarang lagi baca sebuah surat yang kuketik dengan jari-jari mungilku, surat ini kubuat khusus untuk pacarku yaitu kamu. Pertama-tama aku mau ngucapin terima kasih sama ayang karena udah hadir di hidupku, jujur kalau ga ada ayang aku ga bakal bisa menjalankan semester 3 ini dengan semangat. Ayang harus terus samaku, aku mau selamanya sama ayang. Pokoknya apapun yang terjadi kita harus sama-sama terus ya cantikku. LOVE U SAYANG!!!";
+
+        var speed = 50; // Adjust the typing speed here (milliseconds)
+
+        function typeWriter() {
+            if (i < text.length) {
+                document.getElementById("typed-text").getElementsByTagName("h1")[0].innerHTML += text.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+
+        var i = 0;
+        setTimeout(typeWriter, speed);
+    </script>
+</body>
+
+</html>
