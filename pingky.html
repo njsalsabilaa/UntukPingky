@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>W3.CSS Template</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Lato", sans-serif;
+    }
+
+    body,
+    html {
+      height: 100%;
+      color: #777;
+      line-height: 1.8;
+    }
+
+    /* Create a Parallax Effect */
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3 {
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    /* First image (Logo. Full height) */
+    .bgimg-1 {
+      background-image: url('https://raw.githubusercontent.com/njsalsabilaa/njsalsabilaa.github.io/main/Gambar/kita.jpg');
+      min-height: 100%;
+    }
+
+    /* Second image (Portfolio) */
+    .bgimg-2 {
+      background-image: url("https://raw.githubusercontent.com/njsalsabilaa/njsalsabilaa.github.io/main/Gambar/eyes4.jpg");
+      min-height: 400px;
+    }
+
+    /* Third image (Contact) */
+    .bgimg-3 {
+      background-image: url("https://raw.githubusercontent.com/njsalsabilaa/njsalsabilaa.github.io/main/Gambar/pingky.jpeg");
+      min-height: 400px;
+    }
+
+    .w3-wide {
+      letter-spacing: 10px;
+    }
+
+    .w3-hover-opacity {
+      cursor: pointer;
+    }
+
+    /* Turn off parallax scrolling for tablets and phones */
+    @media only screen and (max-device-width: 1600px) {
+
+      .bgimg-1,
+      .bgimg-2,
+      .bgimg-3 {
+        background-attachment: scroll;
+        min-height: 400px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <audio hidden autoplay loop>
+    <source
+src="https://raw.githubusercontent.com/njsalsabilaa/njsalsabilaa.github.io/main/Backsound/penjaga%20hati.mp3#t=00:00:21"
+      type="audio/mp3">
+    Browsermu tidak mendukung tag audio
+  </audio>
+
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar" id="myNavbar">
+      <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);"
+        onclick="toggleFunction()" title="Toggle Navigation Menu">
+        <i class="fa fa-bars"></i>
+      </a>
+      <a href="#home" class="w3-bar-item w3-button">HOME</a>
+      <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+      <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+      <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+        <i class="fa fa-search"></i>
+      </a>
+    </div>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+      <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+      <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+      <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+      <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+    </div>
+  </div>
+
+  <!-- First Parallax Image with Logo Text -->
+  <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+    <div class="w3-display-middle" style="white-space:nowrap;">
+      <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">ALL<span
+          class="w3-hide-small">ABOUT</span> PINGKY</span>
+    </div>
+  </div>
+
+  <!-- Container (About Section) -->
+  <div class="w3-content w3-container w3-padding-64" id="about">
+    <h3 class="w3-center">ABOUT PINGKY</h3>
+    <p class="w3-center"><em>Anak baik, Tegas, Batu dan Manis</em></p>
+    <p class="justify">Dear Pingky, ini semua tentang kamu dari sudut pandang aku yang akan selalu menjadi pengagummu.
+      Kamu adalah wanita unik yang sejauh ini aku kenal. Sejak 25 Desember 2023, aku jatuh cinta untuk pertama kali.
+      Bagiku kamu adalah anugerah yang teramat indah dalam hidupku. Terimakasih sudah hadir dan lahir di dunia ini.
+      Terimakasih sudah menebar kebaikan untuk orang sekitar. Terimakasih sudah selalu menjadi anak baik. </p>
+    <p class="justify">Kamu tau ga sih ? Aku bener-bener ngerasa beruntung banget kenal kamu. Memang sih adakalanya kamu
+      kepala batu. Tapi aku bahagia banget kalau diomelin kamu. Aku slalu jatuh cinta ketika kamu ngomelin aku. Aku
+      gatau harus ngomong apalagi, karena rasanya semua yang aku rasakan sudah selalu aku utarakan.</p>
+    <p class="justify">Disetiap detik aku selalu berdoa, semoga kamu selalu dalam lindungan Allah, semoga semesta slalu
+      berpihak ke kamu, semoga kamu slalu dikelilingi orang baik. Maaf ya, kalau terkadang dunia ini jahat. Tapi boleh
+      ga aku titip pesen ? Jangan pernah cape jadi orang baik ya. Kalau semua orang di dunia ini adalah api, lantas
+      bagaimana dunia ini akan bertumbuh? Tetap jadi pribadi yang rendah hati ya. Jangan pernah lupa untuk memanusiakan
+      manusia ya. Aku bangga banget sama kamu.</p>
+    <p class="justify">Terakhir, kalau memang kamu udah ga berkenan untuk terus berjalan ke tujuan yang sama aku cuma
+      mau menyampaikan beberapa hal. Yang pertama, maaf ya selama sama aku kamu sering kecewa karena sikap dan tindakkan
+      aku yang sepihak. Maaf aku banyak salahnya, maaf banget yaa. Kedua, aku akan selalu menjadi saksi bahwa kamu sudah
+      selalu berjuang dengan baik untuk segala hal. Kamu hebat, Pingky! Ketiga, aku ucapin terimakasih ya sudah berkenan
+      untuk mewarnai hari aku. Aku bahagia dan bersyukur banget atas kehadiran kamu di hidup aku. Keempat, walau dunia
+      ini jahat. Tolong jangan pernah lupa bahwa kamu ga sendirian. Akan slalu ada aku, kamu bisa cari aku kapanpun kamu
+      butuh aku. </p>
+    <p class="justify">Mungkin setelah ini aku akan rehat untuk jalin sebuah hubungan. Akan ku rawat dengan baik rasa
+      sayang ini terhadap kamu. Meskipun sepanjang hidup aku, aku akan slalu tunggu kamu dengan penuh ketulusan. Jangan
+      pernah lupa ya, kamu punya aku yang akan terus sayang kamu. Kapanpun kamu butuh bahu aku, aku akan sekejap menuju
+      arah kamu. Jadi jangan pernah ngerasa sendiri ya, okey? Aku sayang kamu</p>
+
+    <div class="w3-row">
+      <div class="w3-col m6 w3-center w3-padding-large">
+        <p><b><i class="fa fa-user w3-margin-right"></i>Vanessa Pingky Enjellina</b></p><br>
+        <img src="https://raw.githubusercontent.com/njsalsabilaa/njsalsabilaa.github.io/main/Gambar/pingky3.jpeg"
+          class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="100" height="150">
+      </div>
+
+      <!-- Hide this text on small devices -->
+      <div class="w3-col m6 w3-hide-small w3-padding-large">
+        <p>Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure
+          dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+          cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing
+          elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+          laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+    </div>
+    <p class="w3-large w3-center w3-padding-16">Hal yang selalu membuat aku jatuh cinta:</p>
+    <p class="w3-wide"><i class="fa fa-camera"></i>Cantiknya MasyaAllah</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">100%</div>
+    </div>
+    <p class="w3-wide"><i class="fa fa-laptop"></i>Pinter MasyaAllah</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">100%</div>
+    </div>
+    <p class="w3-wide"><i class="fa fa-photo"></i>Suka Ngomel</p>
+    <div class="w3-light-grey">
+      <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">100%</div>
+    </div>
+  </div>
+
+  <div class="w3-row w3-center w3-dark-grey w3-padding-16">
+    <div class="w3-quarter w3-section">
+      <span class="w3-xlarge">99+</span><br>
+      Pekerja Keras
+    </div>
+    <div class="w3-quarter w3-section">
+      <span class="w3-xlarge">99+</span><br>
+      Teliti
+    </div>
+    <div class="w3-quarter w3-section">
+      <span class="w3-xlarge">99+</span><br>
+      You're Strong
+    </div>
+    <div class="w3-quarter w3-section">
+      <span class="w3-xlarge">99+</span><br>
+      Cibuk Syekali
+    </div>
+  </div>
+
+  <!-- Second Parallax Image with Portfolio Text -->
+  <div class="bgimg-2 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+      <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+    </div>
+  </div>
+
+  <!-- Container (Portfolio Section) -->
+  <div class="w3-content w3-container w3-padding-64" id="portfolio">
+    <h3 class="w3-center">All About You</h3>
+    <p class="w3-center"><em>Ini gambar yang mewakili kamu dari sudut pandang aku<br> Klik aja kalau mau memperbesar
+        ya</em></p><br>
+
+    <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+    <div class="w3-row-padding w3-center">
+      <div class="w3-col m3">
+        <img src="https://raw.githubusercontent.com/njsalsabilaa/njsalsabilaa.github.io/main/Gambar/pantai.jpg"
+          style="width:50%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+      </div>
+
+      <div class="w3-col m3">
+        <img src="https://raw.githubusercontent.com/njsalsabilaa/njsalsabilaa.github.io/main/Gambar/bem.jpeg"
+          style="width:50%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
+      </div>
+
+      <div class="w3-col m3">
+        <img src="https://raw.githubusercontent.com/njsalsabilaa/njsalsabilaa.github.io/main/Gambar/pingky2a.jpeg"
+          style="width:50%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
+      </div>
+
+      <div class="w3-col m3">
+        <img src="https://raw.githubusercontent.com/njsalsabilaa/njsalsabilaa.github.io/main/Gambar/kedirimalla.jpg"
+          style="width:50%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
+      </div>
+    </div>
+
+    <div class="w3-row-padding w3-center w3-section">
+      <div class="w3-col m3">
+        <img src="https://raw.githubusercontent.com/njsalsabilaa/njsalsabilaa.github.io/main/Gambar/ramayanaa.jpg"
+          style="width:50%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
+      </div>
+
+      <div class="w3-col m3">
+        <img src="https://raw.githubusercontent.com/njsalsabilaa/njsalsabilaa.github.io/main/Gambar/mawar.jpg"
+          style="width:50%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
+      </div>
+
+      <div class="w3-col m3">
+        <img src="https://raw.githubusercontent.com/njsalsabilaa/njsalsabilaa.github.io/main/Gambar/radiologi.jpg"
+          style="width:50%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
+      </div>
+
+      <div class="w3-col m3">
+        <img src="https://raw.githubusercontent.com/njsalsabilaa/njsalsabilaa.github.io/main/Gambar/suzy.jpeg"
+          style="width:50%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
+      </div>
+      <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+    <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i
+        class="fa fa-remove"></i></span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption" class="w3-opacity w3-large"></p>
+    </div>
+  </div>
+
+  <!-- Third Parallax Image with Portfolio Text -->
+  <div class="bgimg-3 w3-display-container w3-opacity-min">
+    <div class="w3-display-middle">
+      <span class="w3-xxlarge w3-text-white w3-wide">VANESSA PINGKY ENJELLINA</span>
+    </div>
+  </div>
+
+
+
+  <script>
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+
+    // Change style of navbar on scroll
+    window.onscroll = function () {myFunction()};
+    function myFunction() {
+      var navbar = document.getElementById("myNavbar");
+      if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+      } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+      }
+    }
+
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function toggleFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+  </script>
+
+</body>
+
+</html>
